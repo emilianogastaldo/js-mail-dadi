@@ -35,6 +35,12 @@ La mail dell'utente va raccolta tramite input  e con l'aiuto di un button , non 
 Non è necessario usare il tag <form>, ma se lo usate, ricordate di impostare il type="button" sul <button>altrimenti il form ricaricherà la pagina.
 L'esito del controllo deve essere stampato in pagina
 
+
+- Creo la lista di email
+- Recupero la email dall'utente
+- Controllo che la email inserita sia registrata nella lista
+- Stampo un alert in base se c'è o meno la email 
+
 -----------------------------------------------------------------
 
 Consigli del giorno:
