@@ -17,15 +17,28 @@
 
 <body>
     <!-- ESERCIZIO 1 -->
-    <div class="text-center p-5">
-        <button type="button" class="m-3 btn btn-primary" id="playbutton">Gioca</button>
-        <button type="button" class="m-3 btn btn-warning" id="resetbutton">Reset</button>
+    <div class="container">
 
-        <div id="players" class="mb-3"> </div>
-        <div id="message" class="fw-bold"> </div>
+        <div class="text-center p-5 bg-info">
+            <button type="button" class="m-3 btn btn-primary" id="playbutton">Gioca</button>
+            <button type="button" class="m-3 btn btn-warning" id="resetbutton">Reset</button>
+
+            <div id="players" class="mb-3"> </div>
+            <div id="message" class="fw-bold"> </div>
+        </div>
+
+        <!-- ESERCIZIO 2 -->
+        <div class="p-5 bg-primary text-white">
+            <div class="alert alert-success d-none" role="alert">
+                Email corretta
+            </div>
+            <div class="alert alert-danger d-none" role="alert">
+                Email non registrata
+            </div>
+            <label for="email" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="email" placeholder="name@example.com">
+        </div>
     </div>
-
-    <!-- ESERCIZIO 2 -->
 
 </body>
 
