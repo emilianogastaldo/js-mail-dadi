@@ -10,6 +10,14 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Stampiamo in pagina i due tiri e il risultato
 
+SCALETTA:
+
+- Genero un numero random
+- Genero un secondo numero random
+- Stampo i due numeri
+- Controllo quale è più alto
+- Stampo il vincitore
+
 -----------------------------------------------------------------
 
 ESERCIZIO 2 - Finta Login
