@@ -36,4 +36,26 @@ resetButton.addEventListener('click', function () {
     players.innerText = ' ';
 })
 
-//
+//ESERCIZIO 2
+//Creo la lista di emails
+const emails = [
+    'mgreen@msn.com',
+    'rhialto@sbcglobal.net',
+    'cyrus@aol.com',
+    'magusnet@live.com',
+    'pkplex@sbcglobal.net',
+    'emiliano@gmail.com',
+    'ingolfke@comcast.net',
+    'bruck@hotmail.com',
+    'dinther@msn.com',
+    'cgcra@aol.com',
+    'dvdotnet@hotmail.com',
+    'boomzilla@yahoo.com',
+    'thassine@hotmail.com'
+];
+console.table(emails);
+
+//recupero l'input 
+
+const userEmail = document.getElementById('email');
+
