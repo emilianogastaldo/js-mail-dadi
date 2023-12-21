@@ -1,3 +1,24 @@
 body {
     background-color: blanchedalmond;
 }
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.esercizio1 {
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+.esercizio2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px black;
+}
