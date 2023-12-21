@@ -4,7 +4,7 @@ console.log('js ok')
 
 //Recupero il bottone
 const playButton = document.getElementById('playbutton');
-
+const resetButton = document.getElementById('resetbutton')
 //Recupero i due div dove scrivere i messaggi
 let message = document.getElementById('message');
 let players = document.getElementById('players')
@@ -31,3 +31,9 @@ playButton.addEventListener('click', function () {
     players.innerHTML = `Il <u>Giocatore</u> ha fatto <strong>${playerNumber}</strong>, il <u>Computer</u> ha fatto <strong>${computerNumber}</strong>`;
     message.innerText = winner;
 })
+resetButton.addEventListener('click', function () {
+    message.innerText = ' ';
+    players.innerText = ' ';
+})
+
+//
