@@ -53,9 +53,37 @@ const emails = [
     'boomzilla@yahoo.com',
     'thassine@hotmail.com'
 ];
-console.table(emails);
 
-//recupero l'input 
+//recupero l'input e alert
 
-const userEmail = document.getElementById('email');
+const email = document.getElementById('email');
+const alertDanger = document.getElementById('alertdanger');
+const alertSuccess = document.getElementById('alertsuccess');
+const controllButton = document.getElementById('controll-btn');
 
+
+controllButton.addEventListener('click', function () {
+    // recupero il valore della email
+    const userEmail = email.value;
+    // creo una variabile per capire se la email c'è no meno
+    let valid = false;
+
+    //ricerco la email
+    for (let i = 0; i < emails.length; i++) {
+        console.log(i, emails[i]);
+        if (emails[i] === userEmail) {
+            valid = true;
+            i = emails.length; //nel caso in cui l'email c'è forzo il blocco
+        }
+    }
+
+    //decido quale alert far apparire a schermo
+    if (valid) {
+        alertSuccess.classList.remove('d-none');
+        alertDanger.classList.add('d-none');
+
+    } else if (!valid) {
+        alertSuccess.classList.add('d-none');
+        alertDanger.classList.remove('d-none');
+    }
+})
