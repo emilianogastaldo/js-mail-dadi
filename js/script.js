@@ -11,9 +11,9 @@ let players = document.getElementById('players')
 
 //Creo un bottone per gioacare
 playButton.addEventListener('click', function () {
-    //Creo i due numeri ramdomici tra 1 e 10
-    const playerNumber = Math.floor(Math.random() * 10) + 1;
-    const computerNumber = Math.floor(Math.random() * 10) + 1;
+    //Creo i due numeri ramdomici tra 1 e 6
+    const playerNumber = Math.floor(Math.random() * 6) + 1;
+    const computerNumber = Math.floor(Math.random() * 6) + 1;
 
     //Inizializzo il messaggio per il vincitore
     let winner = '';
