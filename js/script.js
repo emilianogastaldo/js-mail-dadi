@@ -63,14 +63,15 @@ const controllButton = document.getElementById('controll-btn');
 
 
 controllButton.addEventListener('click', function () {
+
     // recupero il valore della email
     const userEmail = email.value;
+
     // creo una variabile per capire se la email c'è no meno
     let valid = false;
 
     //ricerco la email
     for (let i = 0; i < emails.length; i++) {
-        console.log(i, emails[i]);
         if (emails[i] === userEmail) {
             valid = true;
             i = emails.length; //nel caso in cui l'email c'è forzo il blocco
